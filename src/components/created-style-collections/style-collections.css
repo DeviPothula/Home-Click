@@ -1,0 +1,57 @@
+.react-photo-gallery--gallery {
+    .overlay-text-wrapper {
+        position: absolute;
+        bottom: 22%;
+        left: 22%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        text-align: center;
+        width: 350px;
+        height: 130px;
+
+        .text-content {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .post-link {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .overlay-text-wrapper {
+        width: 70px !important;
+        height: 35px !important;
+        left: 20% !important;
+    }
+
+    .text-content, .post-link {
+        font-size: 6px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width:640px) {
+    .overlay-text-wrapper {
+        width: 150px !important;
+        height: 75px !important;
+        left: 27% !important;
+    }
+
+    .text-content, .post-link {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .overlay-text-wrapper {
+        width: 200px !important;
+        height: 100px !important;
+        left: 33% !important;
+    }
+
+    .text-content, .post-link {
+        font-size: 16px !important;
+    }
+}
